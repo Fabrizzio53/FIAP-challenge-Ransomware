@@ -23,9 +23,8 @@ Esse script foi feito em python e transformado em um .exe usando o pyinstaller, 
 
 obs: Python versão 3 deve ser instalado, todas as bibliotecas devem estar instalados na máquina.
 
-> CLI
 
-# Nosso script possui 2 versão uma cli e uma gui ambas em suas respectivas pastas 
+# CLI
 
 > 📝 Eula 
 
@@ -43,7 +42,7 @@ O programa usa arquivos iscas que caso o ransomware mude sua extensão ou hash o
 
 Sugerimos não rodar aplicativos não reconhecidos como modo administrador, o script é obrigatório rodar como Administrador no backup e no eula, o checador é aconselhável rodar também com o privilégio mais alto, caso contrário algumas coisas não poderão ser feitas por falta de privilégios
 
-> GUI
+# GUI
 
 > 📝 Eula 
 
