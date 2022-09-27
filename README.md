@@ -17,7 +17,10 @@ Esse script foi feito em python e transformado em um .exe usando o pyinstaller, 
 📶 signal  
 📞 requests  
 📐 hashlib  
-📏 tkinker  
+📏 PySimpleGUI 
+ 🪟  Win32api
+➕ Hashlib
+🧨 socket
 
 >📚Bibliotecas📚
 
