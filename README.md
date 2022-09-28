@@ -63,7 +63,7 @@ O programa usa arquivos iscas que caso o ransomware mude sua extensão ou hash o
 
 Sugerimos não rodar aplicativos não reconhecidos como modo administrador, o script é obrigatório rodar como Administrador no backup e no eula, o checador é aconselhável rodar também com o privilégio mais alto, caso contrário algumas coisas não poderão ser feitas por falta de privilégios
 
->
+> --------------
 
 teste
 
