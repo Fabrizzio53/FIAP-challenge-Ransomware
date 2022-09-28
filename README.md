@@ -1,4 +1,5 @@
-# FIAP-challenge-Ransomware
+![85b4b690-b807-447b-ac68-31e7f51c519b](https://user-images.githubusercontent.com/88493503/192865524-96caaa45-5a7c-4939-998a-8a860046c13f.jpg)
+
 
 # Apenas em Windows
 
