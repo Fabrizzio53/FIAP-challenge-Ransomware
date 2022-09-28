@@ -21,6 +21,7 @@ Esse script foi feito em python e transformado em um .exe usando o pyinstaller, 
  🪟  Win32api  
 ➕ Hashlib  
 🧨 socket  
+👜 py7zr
 
 >📚Bibliotecas📚
 
