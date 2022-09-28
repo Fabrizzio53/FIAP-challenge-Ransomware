@@ -18,9 +18,9 @@ Esse script foi feito em python e transformado em um .exe usando o pyinstaller, 
 📞 requests  
 📐 hashlib  
 📏 PySimpleGUI 
- 🪟  Win32api
-➕ Hashlib
-🧨 socket
+ 🪟  Win32api  
+➕ Hashlib  
+🧨 socket  
 
 >📚Bibliotecas📚
 
