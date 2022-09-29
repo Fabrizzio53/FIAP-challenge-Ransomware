@@ -34,11 +34,9 @@ Sugerimos não rodar aplicativos não reconhecidos como modo administrador, o sc
 
 # Setup
 
-
 Antes de iniciar o programa por favor inicie o setup.py, ele vai instalar as bibliotecas necessárias, caso haja algum erro com o pip siga o tutorial no próprio site do python de comno resolver.
 
 python setup.py
-
 
 >--------------
 
