@@ -189,3 +189,9 @@ O programa possui uma interface gráfica caso não queria usar a linha de comand
 Vale ressaltar que esse script **NÃO** substitui a utilização de um programa de antivirus como o windows defender por exemplo, ele serve como um apoio e nem sempre vai detectar o vírus, porém, seu backup vai estar a salvo, sugerimos também colocar o backup na núvem, nunca compartilhar senhas, sempre desconfie de programas, nunca pague o resgate e por fim caso realmente tenha sido infectado leve o computador para um especialista técnico.
 
 Icon made by: https://www.flaticon.com/free-icon/bug_14410#
+
+Version 1.0
+
+1 - Principal 
+
+0 - Correção de bugs
