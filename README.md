@@ -176,6 +176,16 @@ Dica - O programa funciona mesmo não sendo executado como Administrador, porém
 
 >--------------
 
+# Interface Gráfica
+
+![image](https://user-images.githubusercontent.com/88493503/193103935-bebfc73d-741b-45e7-8ea5-751cd16da7e8.png)
+
+O programa possui uma interface gráfica caso não queria usar a linha de comandos, ela conecta todos os nossos programas em 1 só, é igual a cli,porém, com alguns botões e informações mais interativas, caso tenha dúvida cheque a documentação nesse github
+
+>--------------
+
 # Informações adicionais
 
 Vale ressaltar que esse script **NÃO** substitui a utilização de um programa de antivirus como o windows defender por exemplo, ele serve como um apoio e nem sempre vai detectar o vírus, porém, seu backup vai estar a salvo, sugerimos também colocar o backup na núvem, nunca compartilhar senhas, sempre desconfie de programas, nunca pague o resgate e por fim caso realmente tenha sido infectado leve o computador para um especialista técnico.
+
+Icon made by: https://www.flaticon.com/free-icon/bug_14410#
