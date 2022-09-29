@@ -97,7 +97,7 @@ Configuração:
 
 Digite o nome das contas que NÃO irão ter acesso ao backup usuários comuns:
 
-Aqui você deve digitar suas contas o programa não consegue ainda detectar se a conta digita é válida no sistema operacional então preste muito atenção nesta parte, após digitar ele vai perguntar se vocÊ quer continuar, caso positivo aperte S se não aperte N e enter
+Aqui você deve digitar suas contas o programa não consegue ainda detectar se a conta digitada é válida no sistema operacional então preste muito atenção nesta parte, após digitar ele vai perguntar se você quer continuar, caso positivo aperte S se não aperte N e enter
 
 Configuração2:
 
@@ -115,12 +115,11 @@ O programa agora vai criar arquivos Dummy/iscas que vão servir para detectar se
 
 Em seguida ele vai criar links simbólicos e vai mover todos os arquivos para a pasta C:\Program Files(x86)\Backup é por aqui que os executáveis se encontram e você pode apenas executar eles pelo link simbólico que se encontra na área de trabalho na pasta anti-malware-operation
 
-Em seguida pedimos que reinicia o computador, você não precisa fazer isso agora, porém, como o scrip cria um grupo e altera permissões de pasta é necessário reiniciar o pc para que o windows aplique corretamente as permissões
+Em seguida pedimos que reinicia o computador, você não precisa fazer isso agora, porém, como o script cria um grupo e altera permissões de pasta é necessário reiniciar o pc para que o windows aplique corretamente as permissões
 
 grupo criado:
 
 ![image](https://user-images.githubusercontent.com/88493503/192855165-749d4d48-4f51-433f-9f22-c45e0c475a7e.png)
-
 
 Reconfigurar arquivos e grupos:
 
@@ -128,13 +127,13 @@ Basta apertar a tecla 1 e deixar o programa seguir em frente, essa opção deve 
 
 Permitir ou negar acesso ao backup para o Administrador:
 
-A pasta backup que se encontra em C:\Users\backup tem os backups feito pelo programa backup.py e nem mesmo o administrador tem acesso para fazer com que um ransomware não encripte eles (mesmo que a gente recomenda o backup em um sistema de cloud qualquer ransomware que rode como administrador não vai ter permissão de escrita e consequentemente não vai poder encriptar os arquivos) essas 2 opções servem para te dar acesso ao backup ou não.
+A pasta backup que se encontra em C:\Users\backup tem os backups feito pelo programa backup.py e nem mesmo o administrador tem acesso para fazer com que um ransomware não encripte eles (mesmo que a gente recomende o backup em um sistema de cloud, qualquer ransomware que rode como administrador não vai ter permissão de escrita e consequentemente não vai poder encriptar os arquivos) essas 2 opções servem para te dar acesso ao backup ou não.
 
 >--------------
 
 # Backup
 
-O backup.py é executado sempre de 1 em 1 dia ao iniciar o backup ele vai pedir uma senha, essa senha vai ser usado para proteger um "shadow" do primeiro backup e ele se encontra em C:\Program Files(x86)\Backup)\backup compactado com uma senha e permissão 0 para Todos, essa medida é feita para que caso o primeiro backup tenha sido comprometido o segundo está lá para defender, lembre-se que para acessar o backup visualizar itens ocultos deve estar ativado, para isso clique em explorador de arquivos-Exibir-Itens ocultos
+O backup.py é executado sempre de 1 em 1 dia ao iniciar o backup ele vai pedir uma senha, essa senha vai ser usado para proteger um "shadow" do primeiro backup e ele se encontra em C:\Program Files(x86)\Backup)\backup compactado com uma senha e permissão 0 para Todos, essa medida é feita para que caso o primeiro backup tenha sido comprometido o segundo está lá para defender, lembre-se que para acessar o backup o visualizar itens ocultos deve estar ativado, para isso clique em explorador de arquivos- Exibir - Itens ocultos
 
 ![image](https://user-images.githubusercontent.com/88493503/192856357-5f6cfc09-8eda-4409-a910-1e7cf4701231.png)
 
@@ -142,11 +141,35 @@ Dica: Sugerimos colocar uma cópia do backup na núvem para mais segurança, lem
 
 ![Screenshot_4](https://user-images.githubusercontent.com/88493503/192856690-f700bb80-a8a0-44df-8d26-818e26170cf2.png)
 
+O programa também loga todos os dias que o backup foi ativado, ele se encontra em C:\backupconfig\backup_logs
+
+![image](https://user-images.githubusercontent.com/88493503/193089736-d7c77e2b-3fcf-4b03-bce9-dcc97c16cf22.png)
+
+
 >--------------
 
 # Checador
 
 O checador analisa pelos arquivos iscas criado no eula.py e se baseia em hash, hash é um cálculo matemático muito útil em checar integridades dos arquivos, caso ele detecte que o hash original do arquivo foi alterado ele começa a matar os processos mais recentes e aqueles que estão com alto uso de cpu, por isso pedimos para não alterar esses arquivos.
+
+Quando o programa detectar os processos mais recentes ou que estão com alto uso na cpu além de te avisar pela linha de comandos ele te avisa que um ransomware foi detectado e cataloga essas informações em C:\backupconfig\logs_antimalware
+
+![image](https://user-images.githubusercontent.com/88493503/193090541-0a0c77df-788c-42a1-9881-e4d9dfc76695.png)
+
+Aqui você vê um dos arquivos iscas em seu estado normal ou seja sem nenhum erro, vamos ver caso a gente altere sua extensão ou seu conteudo
+
+![image](https://user-images.githubusercontent.com/88493503/193090786-710c1f19-3f18-4e15-a5b3-c845d128dd9b.png)
+
+![image](https://user-images.githubusercontent.com/88493503/193090917-1ca0a69a-3f8c-4cc8-a750-29c9e55c6e78.png)
+
+O nosso programa detecta essa mudança matou os processos recentes que nesse caso foi o Taskmgr.exe e matou também o notepad.exe ambos foram um teste em seguida ele avisa que houve uma detectação:
+
+![image](https://user-images.githubusercontent.com/88493503/193091041-44e4d870-f5c1-4761-97a9-0bcfd99823e8.png)
+
+se checarmos nos logs:
+
+![image](https://user-images.githubusercontent.com/88493503/193091082-08fd8046-8b83-450c-88fc-b7f09bc82a62.png)
+
 
 
 Dica - O programa funciona mesmo não sendo executado como Administrador, porém, pedimos que ele seja executado com o maior nível de privilégio para ter um sucesso maior
