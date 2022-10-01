@@ -91,7 +91,7 @@ else:
             [sg.Image(filename='anti_malware_operation.png')],
             [sg.Text('Bem-Vindo ao programa Anti-Ransomware')], 
             [sg.Text('Da equipe Anti-Malware-Operation')],
-            [sg.Button('Backup'), sg.Button('Eula'),sg.Button('GitHub'),sg.Button('Analisador de Hash'), sg.Button('Sair')]
+            [sg.Button('Backup', size=(16,0))], [sg.Button('Eula', size=(16,0))],[sg.Button('GitHub', size=(16,0))],[sg.Button('Analisador de Hash', size=(16,0))], [sg.Button('Sair', size=(16,0))]
         ]
         return sg.Window('Anti-Malware-Operation',element_justification='c', layout=layout, finalize=True)
 
@@ -100,11 +100,11 @@ else:
         sg.theme('LightGrey1')
         layout = [
             [sg.Text('Bem vindo a configuração, selecione uma opção:')],
-            [sg.Button('Reconfigurar arquivos/grupos')], 
-            [sg.Button('Iniciar a config')],
-            [sg.Button('Permitir o Administrador acessar o backup')], 
-            [sg.Button('Negar o Administrador acessar o backup')],
-            [sg.Button('Voltar')]
+            [sg.Button('Reconfigurar arquivos/grupos', size=(35,0))], 
+            [sg.Button('Iniciar a config', size=(35,0))],
+            [sg.Button('Permitir o Administrador acessar o backup', size=(35,0))], 
+            [sg.Button('Negar o Administrador acessar o backup', size=(35,0))],
+            [sg.Button('Voltar', size=(35,0))]
         ]
         return sg.Window('Anti-Malware-Operation',element_justification='c', layout=layout, finalize=True)
 
@@ -119,12 +119,12 @@ else:
             [sg.Text('5 - Sugerimos que para tarefas não administrativas não rode nada a não ser esses scripts com privilégios administrativos')],
             [sg.Button('Voltar'), sg.Button('Não Aceito os Termos'), sg.Button('Aceito os Termos')]
         ]
-        return sg.Window('Anti-Malware-Operation',element_justification='c', layout=layout, finalize=True)
+        return sg.Window('Anti-Malware-Operation', layout=layout, finalize=True)
 
     def add_conta():
         sg.theme('LightGrey1')
         layout = [
-            [sg.Text('Caso queira adicionar alguma conta que NÃO irá ter acesso ao backup, clique em (Adcionar conta), caso não queira fazer nada clique em (Proximo)')],
+            [sg.Text('Caso queira adicionar alguma conta que NÃO irá ter acesso ao backup, clique em (Adcionar conta), caso não queira fazer nada clique em (Proximo)',size=(30,0))],
             [sg.Button('Voltar'), sg.Button('Adicionar Conta'), sg.Button('Proximo')]
         ]    
         
@@ -134,11 +134,11 @@ else:
         sg.theme('LightGrey1')
         layout = [
             [sg.Text('Selecione uma opção, para salvar suas pastas:')],
-            [sg.Button('Backup padrão o programa vai pegar as pastas mais importantes.')],
-            [sg.Button('Pastas padrões e suas escolhas.')],
-            [sg.Button('Apenas minhas escolhas.')],
+            [sg.Button('Backup padrão o programa vai pegar as pastas mais importantes.',size=(40,0))],
+            [sg.Button('Pastas padrões e suas escolhas.',size=(40,0))],
+            [sg.Button('Apenas minhas escolhas.',size=(40,0))],
             [sg.Text('Depois de selecionar alguma opção, clique em finalizar')],
-            [sg.Button('Finalizar')]
+            [sg.Button('Finalizar',size=(40,0))]
         ]
         return sg.Window('Anti-Malware-Operation',element_justification='c', layout=layout, finalize=True)
 
@@ -383,7 +383,7 @@ else:
                 f.close()
             sg.popup_auto_close('O programa foi executado com sucesso')
         
-        elif window == janela5 and event == 'Pastas padrões e suas escolhas.':
+        if window == janela5 and event == 'Pastas padrões e suas escolhas.':
             usuariosarquivo = open(f"{eula}\\contas.txt","r")
 
             usuarioslinhas = usuariosarquivo.readlines()
@@ -408,7 +408,7 @@ else:
                 f.close()
             sg.popup_auto_close('O programa foi executado com sucesso')
         
-        elif window == janela5 and event == 'Apenas minhas escolhas.':
+        if window == janela5 and event == 'Apenas minhas escolhas.':
             usuariosarquivo = open(f"{eula}\\contas.txt","r")
 
             usuarioslinhas = usuariosarquivo.readlines()
