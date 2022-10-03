@@ -34,11 +34,7 @@ Sugerimos não rodar aplicativos não reconhecidos como modo administrador, o sc
 
 # Setup
 
-git clone https://github.com/Fabrizzio53/FIAP-challenge-Ransomware.git
-
-cd FIAP-challenge-Ransomware
-
-Antes de iniciar o programa por favor inicie o setup.py, ele vai instalar as bibliotecas necessárias, caso haja algum erro com o pip siga o tutorial no próprio site do python de como resolver.
+Antes de iniciar o programa por favor inicie o setup.py, ele vai instalar as bibliotecas necessárias, caso haja algum erro com o pip siga o tutorial no próprio site do python de comno resolver.
 
 python setup.py
 
@@ -173,9 +169,11 @@ Vale ressaltar que esse script **NÃO** substitui a utilização de um programa 
 
 Icon made by: https://www.flaticon.com/free-icon/bug_14410#
 
-Version 2.0
+Version 1.1.0
 
-2 - Principal 
+1 - Principal 
+
+1 - Features
 
 0 - Correção de bugs
 
