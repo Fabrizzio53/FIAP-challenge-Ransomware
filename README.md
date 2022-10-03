@@ -181,4 +181,6 @@ Version 1.1.0
 
 # Patch Notes
 
-Adiciona a opção escolher pasta para receber os arquivos iscas e correção 
+Adiciona a opção escolher pasta para receber os arquivos iscas
+
+Corrigido alguns problemas na opção 1 do eula
