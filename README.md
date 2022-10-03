@@ -169,8 +169,14 @@ Vale ressaltar que esse script **NÃO** substitui a utilização de um programa 
 
 Icon made by: https://www.flaticon.com/free-icon/bug_14410#
 
-Version 1.0
+Version 2.0
 
-1 - Principal 
+2 - Principal 
 
 0 - Correção de bugs
+
+>--------------
+
+# Patch Notes
+
+Adiciona a opção escolher pasta para receber os arquivos iscas e correção 
