@@ -84,7 +84,13 @@ Aqui você vai poder escolher o tipo de backup:
 
 ![Screenshot_3](https://user-images.githubusercontent.com/88493503/192853827-94353f1b-3799-4de7-a8eb-bd7934e043d4.png)
 
+Configuração3:
+
+![image](https://user-images.githubusercontent.com/88493503/193648407-e01ede33-8dab-4fa3-8162-e122536af253.png)
+
 O programa agora vai criar arquivos Dummy/iscas que vão servir para detectar se um ransomware está na máquina, pedimos para NÃO alterar esses arquivos que se encontra na pasta filesran!!!
+
+Caso você tenha escolhido a primeira opção além de criar os arquivos iscas nos locais citados acima o programa vai criar também nos locais que você escolheu, vale ressaltar que a pasta precisa ter sido antes criada, por exemplo se você quer colocar esses arquivos em uma pasta chamada detectador na sua área de trabalho essa pasta detectador precisa estar já criada antes de selecionar ela, vale lembrar também que caso você reinicie as configurações apenas a pasta com os arquivos iscas "filesran" são deletados e não a pasta que você escolheu para receber os arquivos
 
 Em seguida ele vai criar links simbólicos e vai mover todos os arquivos para a pasta C:\Program Files(x86)\Backup é por aqui que os executáveis se encontram e você pode apenas executar eles pelo link simbólico que se encontra na área de trabalho na pasta anti-malware-operation
 
