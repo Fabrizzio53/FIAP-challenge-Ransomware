@@ -17,6 +17,9 @@ O projeto foi feito visando o challenge que é um desafio da Faculdade FIAP, foi
 
 3 - Have fun
 
+4 - Eu: Alimento=Cachaça#2934
+    Luca: Luca#0587
+
 ## Script python que protege o backup de seus arquivos e checa por ransomwares na máquina se baseando em tempo e uso de processador
 
 >📚Bibliotecas📚 
