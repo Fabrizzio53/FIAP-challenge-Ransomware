@@ -5,6 +5,18 @@
 
 > Obs: Anti-Malware-Operation é uma empresa **fictícia** qualquer semelhança são meras conhecidências
 
+
+# **LEIA**
+
+O projeto foi feito visando o challenge que é um desafio da Faculdade FIAP, foi proposto aos alunos fazer um programa que detecte ransomware e mate ele, o programa foi feito por mim e a interface gráfica pelo meu amigo Luca Gomes, o software é de uso **LIVRE** (código aberto), você tem permissão total para fazer o que quiser com ele:
+
+
+1 - Você pode pegar o código, editar ele e compartilhar as mudanças, eu apenas peço que cite o local que você pegou antes, dê os créditos pelo código original.
+
+2 - Não, o código não vai sofrer mais nenhuma alteração vindo de mim ou do Luca
+
+3 - Have fun
+
 ## Script python que protege o backup de seus arquivos e checa por ransomwares na máquina se baseando em tempo e uso de processador
 
 >📚Bibliotecas📚 
